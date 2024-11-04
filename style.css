@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+header .logo {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.logo-img {
+    width: 1500px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.small-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+.hero {
+    background: url(picbub.png) center center no-repeat;
+    background-size: cover; /* Makes the image cover the full section */
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    padding: 0 20px; /* Horizontal padding only for slight side space */
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0 20px;
+}
+
+
+.services {
+    background-color: #dc6d18;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.service-cards {
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+
+.about {
+    background: rgb(145, 198, 70);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: #ffc23d;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0077FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 0.1%;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+}
